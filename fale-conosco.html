@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="estilo-pi.css">
+		<link rel="stylesheet" type="text/css" href="form.css">
+		<link rel = "shortcut icon" type = "imagem/x-icon" href = "img/pizza_1.ico"/>
+		<title>Wow Pizzas</title>
+	</head>
+	<body>
+		<div id="interface"> <!-- Essa div posiciona relativa, vai ser um conteiner-->
+		
+		<header id="cabecalho">
+			<hgroup>
+				<img id="logo" src="img/logo-sem-fundo.jpeg" alt="logo pizzaria">
+			<h1>WOW Pizzas</h1>
+			<h2>A melhor para os melhores</h2>
+			</hgroup>
+		</header>
+	<nav id="menu">
+			<h1>Menu Principal</h1>
+			<ul type="disc">
+				<li><a href="index.html" target="self">Home</a></li>
+				<li><a href="cardapio.html" target="self">Cardápio</a></li>
+				<!--<ul type="square">
+					<li>Pizzas</li>
+					<li>Esfirras</li>
+					<li>Bebidas</li>
+				</ul> -->
+				<li><a href="localizacao.html"target="self">Localização</a></li>
+				<li><a href="fale-conosco.html"target="self">Fale Conosco</a></li>
+			</ul>
+		</nav>
+		<form method="post" id="fContato" action="mailto:wagnerjr.nascimento@outlook.com"> <!-- GET mais veloz porem pouco seguro, pega o valor digitado e vai para URL apos enviar (como uma procura no google).
+		POST msis lento porém mais seguro, não usa URL-->
+
+			<fieldset id="dados">
+				<legend>Fale com a gente</legend>
+
+				<p><label for="cNome">Nome: <input type="text" name="tNome" id="cNome" size="30" maxlength="30" placeholder="Nome Completo"><!-- usar diferente valores valor para name e id-->
+				
+				<p>Sexo: 
+					<input type="radio" name="tSexo" id="cMasc"/> <label for="cMasc">Masculino</label>
+
+					<input type="radio" name="tSexo" id="cFem"checked/> <label for="cFem">Feminino</label></p>
+
+					<!-- Pode ser utilizado o checked para já deixar marcado um item -->
+				
+				<p><label for="cMail">E-mail: </label>
+					<input type="text" name="tMail" id="cMail" size="30" maxlength="30" placeholder=" example@example.com.br">
+
+				<p><label for="cCel">Celular: </label>
+					<input type="text" name="tCel" id="cCel" size="11" maxlength="11" placeholder=" (00)0000-0000"></p>
+
+					<p><input type="checkbox" name="cWhat" checked/> Autorizo envio de mensagem via Whatsapp.</p>
+				
+				<p><lable>Assunto: <input type="text" name="tAssunto" name="cAssunto" size="30" maxlength="20"></lable>
+
+				<p><label for="cUrg">Grau de Prioridade:</label> Baixa <input type="range" name="tUrg" id="cUrg" min="0" max="10" step="5"> Muito Alta</p>
+
+				<p><lable for="cCat">Categoria: </lable>
+				<select name="tCat" id="cCat">
+					<option>Dúvidas</option>
+					<option>Reclamações</option>
+					<option>Sugestões</option>
+				</select>
+
+				<p><label for="cMsg">Mensagem:</label></p>
+					<p><textarea name="tMsg" id="cMsg" cols="45" rows="5" placeholder=" Digite sua mensagem"></textarea></p>
+				<p><input type="submit" name="Enviar"></p>
+				<!--<input type="image" name="tEnviar" src="nome da imagem">-->
+			</fieldset>
+		</form>
+	</body>

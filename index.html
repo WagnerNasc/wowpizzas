@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="estilo-pi.css">
+		<link rel = "shortcut icon" type = "imagem/x-icon" href = "img/pizza_1.ico"/>
+		<title>Wow Pizzas</title>
+	</head>
+	<body>
+	<div id="interface"> <!-- Essa div posiciona relativa, vai ser um conteiner-->
+		<header id="cabecalho">
+			<hgroup>
+				<img id="logo" src="img/logo-sem-fundo.jpeg" alt="logo pizzaria">
+			<h1>WOW Pizzas</h1>
+			<h2>A melhor para os melhores</h2>
+			</hgroup>
+		<div class="pedido" onclick="window.open('https://api.whatsapp.com/send?phone=555513981579897&text=Seja%20bem-vindo(a).%20%C3%89%20massa%20demais%20te%20ver%20por%20aqui.')">
+			
+			<h3> Solicite aqui </h3>
+
+			<!-- <img class="pedidoRede" src="img/whatsapp.png" >
+			<img src="img/whatsapp1.png">
+			<img src="img/messenger.png">
+			<img src="img/messenger1.png"> -->
+		</div>
+		</header>
+
+		<section id="corpo">
+
+		<article id="informacao-inicial"> <!-- area left da pagina -->
+			<h2>Seja Bem-vindo(a), qualidade e preço justo.</h2>
+			<br>
+			<p>Chegou seu novo <a href="https://translate.google.com.br/#view=home&op=translate&sl=auto&tl=pt&text=point" target="_blank">point</a> tanto para os dias  cansativos de trabalho quanto para os finais de semana antes do rolê (Ah, se está desempregado aqui também é seu lugar, temos pizzas precinho). <b>Wow Pizzas</b>, trazendo uma novidade para o seu bairro com as nossas diversidades de pizzas e sabores, venha conferir.</p>
+			<br>
+			<table id="tabela-horario">
+				<h2>Horário de Funcionamento </h2>
+				<br>
+				<tr><td class="superioresq">Domingo</td>	<td class="superiordir">19:00–01:00</td></tr>
+				<tr><td>Segunda-feira</td> <td>19:00–01:00</td></tr>
+				<tr><td>Terça-feira</td> <td>19:00–01:00</td></tr>
+				<tr><td>Quarta-feira</td> <td>19:00–01:00</td></tr>
+				<tr><td>Quinta-feira</td> <td>19:00–01:00</td></tr>
+				<tr><td>Sexta-feira</td> <td>19:00–01:00</td></tr>
+				<tr><td class="inferioresq">Sábado</td>	<td class="inferiordir">19:00–01:00</td></tr>
+			</table>
+			<br>
+			<h2>Nossos Sabores</h2>
+
+			<figure class="foto-legenda">
+				<img src="img/pizza-0.jpeg">
+			<figcaption>
+				<h3>Frango com Catupiry</h3>
+			</figcaption>
+			</figure>
+
+			<figure class="foto-legenda">
+				<img src="img/pizza-01.jpeg">	
+				<figcaption>
+					<h3>A Moda do Chefe</h3>
+				</figcaption>
+			</figure>
+
+			<figure class="foto-legenda">
+				<img src="img/pizza-02.jpeg">	
+				<figcaption>
+					<h3>Oreo Cremoso</h3>
+				</figcaption>
+			</figure>
+
+			<figure class="foto-legenda">
+				<img src="img/pizza-03.jpeg">	
+				<figcaption>
+					<h3>Sensação</h3>
+				</figcaption>
+			</figure>
+		</article>
+		</section>
+
+		<nav id="menu">
+			<h1>Menu Principal</h1>
+			<ul type="disc">
+				<li><a href="index.html" target="self">Home</a></li>
+				<li><a href="cardapio.html" target="self">Cardápio</a></li>
+				<!--<ul type="square">
+					<li>Pizzas</li>
+					<li>Esfirras</li>
+					<li>Bebidas</li>
+				</ul> -->
+				<li><a href="localizacao.html"target="self">Localização</a></li>
+				<li><a href="fale-conosco.html"target="self">Fale Conosco</a></li>
+			</ul>
+		</nav>
+		<aside id="lateralCima">
+			<h1>Promoções da Semana</h1>
+			<h2> Venha se surpreender com nossos preços</h2>
+				
+				<!-- Vinculado ao JavaScript -->
+			<script src="funcoes.js"></script>
+
+			<img src="img/facebook.png" id="rede1" onmouseout="redeSocial1('facebook')" onmousemove="redeSocial1('facebook1')" onclick="window.open('https://www.facebook.com/Wowpizzaria')" target= '_blank'> 
+
+			<img src="img/instagram.png" id="rede2" onmouseout="redeSocial2('instagram')" onmousemove="redeSocial2('instagram1')" onclick="window.open('https://www.instagram.com/wowpizzaria')" target= '_blank'>
+		</aside>
+		
+		<aside id="lateralBaixo">
+
+			<img src="img/pizza.png" class="pizzaRoda" alt="Pizza Rodando">
+		</aside>
+		
+		<footer id="rodape">
+			<p>Copyright &copy; 2019 - by Wagner Nascimento<br/>
+			<a href="https://www.facebook.com/wagner.junior.549" target="_blank">Facebook</a> |
+			<a href="https://www.linkedin.com/in/wagner-nascimento/" target="_blank">  Linkedin </a></p>
+		</footer>
+	</div>
+	</body>
+</html>
+					
