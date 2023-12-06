@@ -25,7 +25,7 @@ header#cabecalho{
 	border-bottom: 1px #60606060 solid; /*parte de baixo do cabecalho*/
 	height: 100px;
 	/*background: url(") no-repeat; Para colcoar a imagem do logo*/
-	padding: 0 0 0 18px;
+	padding: 18px;
 }
 
 header#cabecalho h1 {
@@ -66,7 +66,8 @@ header#cabecalho .pedido h3{
 }
 
 header#cabecalho h3:hover {
-	background-color: #606060;
+	background-color: #fff;
+	border: 1px solid #000000;
 	border-radius: 20px;
 	color: #363636;
 }
@@ -108,6 +109,7 @@ footer#rodape a:hover {
 }
 
 figure.foto-legenda {
+	position: relative;
 	border: 8px solid white;
 	width: 200px;
 	box-shadow: 1px 1px 4px black;
@@ -122,7 +124,11 @@ figure.foto-legenda img {
 
 figure.foto-legenda figcaption {
 	opacity: 0;
-	position: 0 fixed;
+	position: absolute;
+	top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 	background-color: rgba(0,0,0,.4);
 	color: white;
 	padding: 10px;
@@ -144,7 +150,7 @@ nav#menu ul { /* usasse # quando for id*/
 	list-style: none; /* retira os marcadores (bolinha antes do UL ou numero do OL)*/
 	text-transform: uppercase; /* Deixa a letra em caixa alta*/
 	position: absolute; /* serve apra passar por cima de outros documentos*/
-	top: -20px; /* Aproximação da aprte superior */
+	top: -10px; /* Aproximação da aprte superior */
 	margin-left: auto;
 	margin-right: auto;
 }
